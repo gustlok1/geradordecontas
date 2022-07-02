@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar email</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <section id="email-senha">
+        <div class="item">
+            <h1 id="email">NOME</h1>
+            <input type="text" id="txtnome" placeholder="Seu nome">
+            <img src="./src/img/copiar.png" alt="img-copiar" class="copiar" onclick="copiarTexto(0)">
+        </div>
+        <div class="item">
+            <h1 id="email">EMAIL</h1>
+            <input type="text" id="txtemail" placeholder="Seu email">
+            <img src="./src/img/copiar.png" alt="img-copiar" class="copiar" onclick="copiarTexto(1)">
+        </div>
+        <div class="item">
+            <h1 id="senha">SENHA</h1>
+            <input type="text" id="txtsenha" placeholder="Sua senha">
+            <img src="./src/img/copiar.png" alt="img-copiar" class="copiar" onclick="copiarTexto(2)">
+        </div>
+        <input type="button" value="Gerar nova conta" onclick="gerarConta()">
+        <input type="button" value="Gravar" onclick="gravar()">
+    </section>
+</body>
+<script src="./src/js/script.js"></script>
+</html>
